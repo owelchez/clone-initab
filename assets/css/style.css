@@ -12,14 +12,14 @@ html, body {
 }
 
 .panel-container {
-	/*background-color: #282A36;*/
-	color: #000;
+	position: fixed;
+	clear: right;
 	height: 100%;
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
-	background:-webkit-linear-gradient(180deg, #282A36 calc(100% - 150px), #44475a 150px);
-	font-family: "Helvetica Neue"
+	background:-webkit-linear-gradient(180deg, #282A36 calc(100% - 141px), #44475a 141px);
+	font-family: "Inconsolata',monospace";
 }
 
 .menu-left i{
@@ -40,4 +40,52 @@ html, body {
 	margin-right: 10px;
 	margin-bottom: 10px;
 	font-size: 20px;
+}
+
+#column1-logo {
+	font-size: 20px;
+}
+
+#column2-logo {
+	font-size: 20px;
+}
+
+#column3-logo {
+	font-size: 20px;
+}
+
+.column1-header {
+	font-size: 16px;
+	display: inline;
+}
+
+.top-columns {
+	margin-top: 40px;
+	font-size: 20px;
+}
+
+.article-list li {
+	width: 250px;
+	margin-top: 20px;
+	font-size: 14px;
+	color: white;
+	padding-left: 12px;
+	text-align: left;
+	list-style: none;
+	border-left: solid;
+	border-color: #44475a;
+	margin: 40px 0px 0px;
+}
+
+.relevant-history li{
+	height: 50%;
+	list-style: none;
+	margin-top: 30px;
+	overflow: hidden;
+	word-wrap: break-word;
+	font-size: 14px;
+	overflow-y: auto;
+	border-bottom: solid;
+	border-bottom-width: 1px;
+	border-color: #44475a;
 }
