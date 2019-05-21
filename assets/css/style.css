@@ -1,6 +1,13 @@
+ul::-webkit-scrollbar { width: 0 !important }
+
 html, body {
     min-height: 100% !important;
     height: 100%;
+    font-family: "Inconsolata";
+}
+
+ul {
+	list-style-type: none;
 }
 
 .container-fluid {
@@ -19,7 +26,6 @@ html, body {
 	padding: 0px;
 	margin: 0px;
 	background:-webkit-linear-gradient(180deg, #282A36 calc(100% - 141px), #44475a 141px);
-	font-family: "Inconsolata',monospace";
 }
 
 .menu-left i{
@@ -43,11 +49,16 @@ html, body {
 }
 
 #column1-logo {
+	padding-left: 30px;
 	font-size: 20px;
 }
 
 #column2-logo {
-	font-size: 20px;
+	width: 440px;
+	border-bottom: solid;
+	border-bottom-width: 1px;
+	border-color: #44475a;
+	font-size: 12px;
 }
 
 #column3-logo {
@@ -75,17 +86,82 @@ html, body {
 	border-left: solid;
 	border-color: #44475a;
 	margin: 40px 0px 0px;
+	
 }
 
-.relevant-history li{
-	height: 50%;
-	list-style: none;
-	margin-top: 30px;
+.article-list ul {
+	height: 680px;
 	overflow: hidden;
-	word-wrap: break-word;
+	overflow-y: scroll;
+}
+
+.relevant-history ul {
+	list-style: none;
+	margin-top: 25px;
 	font-size: 14px;
-	overflow-y: auto;
-	border-bottom: solid;
-	border-bottom-width: 1px;
+	white-space: nowrap;
+}
+
+.relevant-history ul {
+	height: 180px;
+	overflow-y: scroll;
+	overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.time-ago {
+	margin-left: 30px;
+}
+
+.clock-container {
+	margin-bottom: 300px;
+	margin-left: 50px;
+	position: relative;
+	height: 10px;
+	font-size: 120px;
+	color: #6272a4;
+
+}
+
+.am-pm {
+	font-size: 32px;
+}
+
+.date-container {
+	position: absolute;
+	font-size: 20px;
+}
+
+.column2 {
+	text-align: center;
+}
+
+.column3 {
+	padding-left: 100px;
+	position: relative;
+	font-size: 16px;
+	font-family: "Inconsolata";
+}
+
+.history-list {
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+.issue-history li {
+	font-size: 14px;
+	font-family: "Inconsolata";	
+	width: 250px;
+	margin-top: 20px;
+	padding-left: 12px;
+	text-align: left;
+	list-style: none;
+	border-left: solid;
 	border-color: #44475a;
+	margin: 40px 0px 0px;
+}
+
+.issue-history ul {
+	height: 600px;
+	overflow: hidden;
+	overflow-y: scroll;
 }
